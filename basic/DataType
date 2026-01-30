@@ -1,0 +1,25 @@
+# variable
+x = 10
+name = "Dheeraj"
+price = 99.5
+
+# Datatype
+
+a = 10        # int (integer)
+b = 3.14      # float
+c = "Hello"   # string
+d = True      # boolean
+
+# valid
+total_marks = 90
+_name = "Ram"
+
+# invalid
+1name = "Ram"
+total marks = 90
+
+# type
+x = 10
+print(type(x))   # <class 'int'>
+
+
