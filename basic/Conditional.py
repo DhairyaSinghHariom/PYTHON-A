@@ -63,3 +63,19 @@ match number:
         print("Two or Three")
     case _:
         print("Other number")
+
+# Example  1
+age = 18
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+
+# Example 2
+var = 'N'
+if (var == 'Y' or var == 'y'):
+    print("YOU SAID YES")
+elif (var == 'N' or var == 'n'):
+    print("YOU SAID NO")
+else:
+    print("INVALID INPUT")
