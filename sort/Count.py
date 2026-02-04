@@ -20,4 +20,4 @@ def counting_sort(arr):
 arr = list(map(int, input("Enter numbers separated by space: ").split()))
 
 result = counting_sort(arr)
-print("Sorted Array:", result)
+print("a:", result)
