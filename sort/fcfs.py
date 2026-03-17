@@ -1,21 +1,22 @@
-n = int(input("Enter number of processes: "))
+n = 3
 
-bt = []
-for i in range(n):
-    bt.append(int(input(f"Burst Time of P{i+1}: ")))
+bt = [5, 3, 8]
 
-wt = [0]*n
-tat = [0]*n
+wt = [0] * n
+tat = [0] * n
 
+# Waiting Time
 for i in range(1, n):
     wt[i] = wt[i-1] + bt[i-1]
 
+# Turnaround Time
 for i in range(n):
     tat[i] = wt[i] + bt[i]
 
-print("\nP\tBT\tWT\tTAT")
-for i in range(n):
-    print(f"P{i+1}\t{bt[i]}\t{wt[i]}\t{tat[i]}")
+print("Process  BT  WT  TAT")
 
-print("\nAverage WT =", sum(wt)/n)
-print("Average TAT =", sum(tat)/n)
+for i in range(n):
+    print("P", i+1, "   ", bt[i], "  ", wt[i], "  ", tat[i])
+
+print("Average Waiting Time =", sum(wt)/n)
+print("Average Turnaround Time =", sum(tat)/n)
